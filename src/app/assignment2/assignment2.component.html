@@ -1,0 +1,9 @@
+<label>User Name </label>
+<input
+[(ngModel)]="userName"
+>
+<p>the username is {{userName}}</p>
+<button 
+[disabled]="!userName"
+(click)="removeUerName()"
+>click</button>
