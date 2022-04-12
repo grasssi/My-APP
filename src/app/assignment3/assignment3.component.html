@@ -1,0 +1,8 @@
+<button (click)="hideTheParagrph()">display Details</button>
+<p *ngIf="buttonclicked">Hello I'm Happy men and i will Do it one day </p>
+<div *ngFor="let ass of assi"  [ngClass]="{assign: ass > 4}" >
+    <p *ngIf="ass > 4" 
+        [ngStyle]="{backgroundColor:getColor()}"
+       >
+         {{ass}} </p>
+</div>
